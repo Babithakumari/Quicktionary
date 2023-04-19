@@ -1,0 +1,49 @@
+{
+    "manifest_version":2,
+    "name": "Quicktionary",
+    "version":"2.0",
+    "description": "This extension provides the meaning of words on a webpage. On Double-clicking any word the user will be able to view its definition in a small pop-up bubble alongwith its phonetic transcription and audio",
+
+     "permissions":["tabs"],
+
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content.js"],
+            "css":["content.css"]
+        }
+    ],
+
+    "background":{
+        "scripts":["background.js"]
+
+    },
+
+
+    "browser_action":{
+        "default_icon": "icon.png",  
+        "default_title": "Define word"
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
